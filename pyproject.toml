@@ -1,0 +1,28 @@
+[project]
+name = "credit-score-comparaison"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rochdi", email = "mesbah.rochdi@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "catboost>=1.2.10",
+    "kagglehub>=1.0.3",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.2",
+    "missingno>=0.5.2",
+    "numpy>=2.5.5",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+credit-score-comparaison = "credit_score_comparaison:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
